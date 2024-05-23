@@ -1,0 +1,55 @@
+/* Estilos personalizados */
+
+.header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 50px 0;
+}
+img{
+    width: 200PX;
+}
+.sobre {
+    padding: 50px 0;
+}
+
+.habilidades {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.projetos {
+    padding: 50px 0;
+}
+
+.footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer ul {
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer ul li:last-child {
+    margin-right: 0;
+}
+
+/* Estilos para as habilidades */
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skill {
+    width: 100px; 
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 10px;
+}
