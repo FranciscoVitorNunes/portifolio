@@ -1,0 +1,160 @@
+main{
+    margin-left: 300px;
+    padding: 25px 13px;
+    font-family: sans-serif;
+}
+
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+.section-title{
+    padding-bottom: 30px;
+}
+.section-title h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.section-title h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+}
+
+
+.section-title h1::after {
+background: #a44cb8;
+}
+#skills .skills-sobre{
+    display: flex;
+    flex-direction:row ;
+    gap: 15px;
+}
+ .skills-sobre img{
+    width: 300px;
+    height: 100px;
+}
+.skills-sobre p{
+    font-size: 16px;
+    padding-right: 100px;
+}
+#kills .skills-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.skills-container .container-roll{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding: 0px  35px;
+}
+.skills-container .container-roll .card{
+    width: 240px;
+    height: 130px;
+    border: 1px solid rebeccapurple;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skills-container .container-roll .card:hover {
+    transform: translateY(-5px); /* Move o card para cima */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adiciona sombra para realce */
+}
+
+.skills-container .container-roll .card img{
+    width: 70px;
+    margin: 0 auto;
+}
+
+#formacao, #experiencia, #certificados{
+    margin-bottom: 20px;
+}
+
+.resume-item{
+    margin: 0px 0px 0px 20px;
+    border-left: 2px solid purple;
+    padding: 10px 0px 20px 20px;
+}
+.resume-item i{
+    font-size: 25px;
+}
+.resume-item h4{
+    font-size: 18px;
+    margin: 5px 0px 10px 0px;
+}
+.resume-item ul li{
+    list-style: none;
+    color: #0A0A0A;
+    font-weight: 700;
+    padding-bottom: 5px;
+    font-size: 14.4px;
+}
+.resume-item ul p{
+    font-size: 16px;
+    color: #808080;
+    margin-bottom: 16px;
+}
+.resume-item p {
+    padding:0px 120px 10px 0px;
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
+
+.certificados {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.grid-certificados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas no desktop */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#certificados .card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#certificados .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#certificados .card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#certificados .card p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Hover - Move o card um pouco para cima */
+#certificados .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
