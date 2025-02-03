@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <button id="menu-toggle">
+        <i class="fa-solid fa-bars"></i> <!-- Ícone inicial -->
+    </button>
+    
+    <header id="header">
+        <div class="header-container">
+            <div class="profile">
+                <div class="perfil">
+                    <img class="img-perfil" src="./assets/perfil.png" alt="">
+                    <h1>Vitor</h1>
+                </div>
+                <div class="social-links">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-home"></i>
+                            <span>Sobre mim</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Minhas Skills</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>Formações</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-folder"></i>
+                            <span>Projetos realizados</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="theme">
+                            <input type="checkbox" name="theme" id="theme">
+                            <label for="theme">
+                                
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+
+
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const header = document.getElementById("header");
+    const icon = menuToggle.querySelector("i");
+
+    menuToggle.addEventListener("click", function () {
+        header.classList.toggle("active");
+        icon.classList.toggle("fa-bars");
+        icon.classList.toggle("fa-xmark");
+    });
+});
+
+</script>
+</html>
