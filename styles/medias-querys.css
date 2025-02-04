@@ -55,7 +55,15 @@
         width: 200px;
     }
 }
+@media  (min-width: 1024px) {
+    #navbar ul{
+        gap: 26px;
+    }
+    #navbar a{
+        font-size: 16px;
+    }
 
+}
 
 /* Responsividade Certificados*/
 @media (max-width: 1024px) {

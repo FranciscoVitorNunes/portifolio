@@ -1,0 +1,8 @@
+#about{
+    background-color: aquamarine;
+    height: 100vh;
+    padding-left: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

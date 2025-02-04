@@ -9,9 +9,12 @@ main{
     display: flex;
     flex-direction: column;
     gap: 50px;
-    margin-bottom: 80px;
+}
+#skills .section-title{
+    padding-bottom: 0px;
 }
 .section-title{
+    margin-top: 60px;
     padding-bottom: 30px;
 }
 .section-title h1{
