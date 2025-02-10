@@ -8,15 +8,16 @@ main{
 #skills{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
 }
 #skills .section-title{
     padding-bottom: 0px;
 }
 .section-title{
-    margin-top: 60px;
+    margin-top: 0px;
     padding-bottom: 30px;
 }
+
 .section-title h1{
     font-size: 32px;
     margin-bottom: 20px;
@@ -38,17 +39,22 @@ main{
 background: #a44cb8;
 }
 #skills .skills-sobre{
+    padding: 0px 45px;
     display: flex;
     flex-direction:row ;
     gap: 15px;
 }
  .skills-sobre img{
-    width: 300px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 .skills-sobre p{
+    color: #1d1d1d;
+    font-weight: 500;
     font-size: 16px;
     padding-right: 100px;
+    padding-top: 40px;
+    line-height: 23px;
 }
 #kills .skills-container{
     display: flex;
@@ -69,18 +75,18 @@ background: #a44cb8;
     border-radius: 5px;
     display: flex;
     align-items: center;
+    justify-content: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .skills-container .container-roll .card:hover {
     transform: translateY(-5px); /* Move o card para cima */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adiciona sombra para realce */
 }
-
-.skills-container .container-roll .card img{
-    width: 70px;
-    margin: 0 auto;
+.card i {
+    font-size: 70px !important;
+    color: rebeccapurple;
+    display: block;
 }
-
 #formacao, #experiencia, #certificados{
     margin-bottom: 20px;
 }
