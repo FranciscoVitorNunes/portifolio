@@ -20,7 +20,6 @@
 }
 .code h1, .code p {
     overflow: hidden;
-    border-right: 2px solid #d4d4d4;
     display: inline-block;
     white-space: nowrap;
 }
@@ -175,11 +174,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 60px;
 }
 .container-browser .sobre{
     text-align: left;
-    color: #6B30AB;
+    color: #d7d0e0;
 }
 .container-browser .image img{
     width: 200px;
