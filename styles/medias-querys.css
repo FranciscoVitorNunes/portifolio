@@ -54,6 +54,9 @@
     .skills-container .container-roll .card{
         width: 200px;
     }
+    #about{
+        padding-left: 0px;
+    }
 }
 @media  (min-width: 1024px) {
     #navbar ul{
