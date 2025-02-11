@@ -332,33 +332,6 @@
     </main>
 
 </body>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.getElementById("menu-toggle");
-    const header = document.getElementById("header");
-    const icon = menuToggle.querySelector("i");
-
-    menuToggle.addEventListener("click", function () {
-        header.classList.toggle("active");
-        icon.classList.toggle("fa-bars");
-        icon.classList.toggle("fa-xmark");
-    });
-});
-function playClick() {
-    const displayBrowser = document.querySelector('.window-browser')
-    const displayCode = document.querySelector('.window-code');
-    if (displayCode) {
-        displayCode.style.display = 'none';
-        displayBrowser.style.display = "block"
-    }
-}
-function vsCodeClick() {
-    const displayBrowser = document.querySelector('.window-browser')
-    const displayCode = document.querySelector('.window-code');
-    if (displayCode) {
-        displayCode.style.display = 'block';
-        displayBrowser.style.display = "none"
-    }
-}
+<script src="./scripts/script.js">
 </script>
 </html>
