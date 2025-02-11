@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="./styles/medias-querys.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Document</title>
+    <title>Francisco Vitor - Portifólio</title>
 </head>
 <body>
     <button id="menu-toggle">
@@ -87,72 +87,30 @@
             
         </div>
     </header>
+
     <section id="about">
-        <div class="windows">
-            <div class="window-code">
-                <div class="container-top">
-                    <div><img src="./assets/vscode.png" alt=""></div>
-                    <div><i class="fa-solid fa-xmark"></i></div>
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="buttons">
+                    <span class="red"></span>
+                    <span class="yellow"></span>
+                    <span class="green"></span>
                 </div>
-                <div class="container">
-                    <div class="code">
-                        <h1>     <span class="cinza">&lt;</span><span class="azul">h1</span><span class="cinza">&gt;</span>Francisco Vitor<span class="cinza">&lt;/</span><span class="azul">h1</span><span class="cinza">&gt;</span></h1>
-                        
-                        <p class="text">     <span class="cinza">&lt;</span><span class="azul">p</span><span class="cinza">&gt;</span>Transformando <span class="gold">IDÉIAS</span> em <span class="gold">CÓDIGOS</span><span class="cinza">&lt;/</span><span class="azul">p</span><span class="cinza">&gt;</span></p>
-                        <p class="img">
-                            &lt; img src="./assets/perfil.png" alt="perfil" &gt;
-                        </p>
-                        <p class="btn1">
-                            &lt; button &gt;
-                                contrate
-                            &lt; /button &gt;
-                        </p>
-                        <p class="btn2">
-                            &lt; button &gt;
-                                meu trabalho
-                            &lt; /button &gt;
-                        </p>
-                    </div>
-                </div>
-                <div class="container-down">
-                    <div class="icons-window">
-                        <div class="onWindow">
-                            <img src="./assets/vscode.png" alt="" class="icon-window">
-                        </div>
-                        <div onclick="playClick()">
-                            <i class="fa-solid fa-play"></i>
-                        </div>
-                    </div>
-                </div>
+                <p>bash - vitor@portfolio</p>
             </div>
-            <div class="window-browser">
-                <div class="container-top">
-                    <div class="aba-browser">
-                        <p>portifólio <i class="fa-solid fa-xmark"></i></p>
-                    </div>
-                </div>  
-                <div class="container-browser">
-                    <div class="sobre">
-                        <h1>Francisco Vitor</h1>
-                        <p>Trannsformado Ideias em Códigos!</p>
-                    </div>
-                    <div class="image">
-                        <img src="./assets/perfil.png" alt="">
-                    </div>
-                </div>
-                <div class="container-down">
-                    <div class="icons-window">
-                        <div onclick="vsCodeClick()">
-                            <img src="./assets/vscode.png" alt="" >
-                        </div>
-                        <div class="onWindow">
-                            <i class="fa-solid fa-play" ></i>
-                        </div>
-                    </div>
-                </div>
+            <div class="terminal-body">
+                <p><span class="command">> whoami</span></p>
+                <p id="typing-text"></p>
+                
+                <p><span class="command">> cat skills.txt</span></p>
+                <p id="skills"></p>
+                
+                <p><span class="command">> open github.com/vitor</span></p>
+                <p><a href="https://github.com/FranciscoVitorNunes" target="_blank" id="github-link">Clique aqui para ver meu GitHub</a></p>
             </div>
         </div>
     </section>
+  
     <main>
         <section id="skills">
             <div class="section-title">
@@ -186,6 +144,9 @@
                     </div>
                 </div>
                 <div class="container-roll">
+                    <div class="card">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
                     <div class="card">
                         <i class="fa-solid fa-gamepad"></i>
                     </div>

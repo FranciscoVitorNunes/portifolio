@@ -1,187 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
-
-
-#about{
+#about {
     padding-left: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #6B30AB, #4E227D);
-    color:#fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Fira Code', monospace;
-}
-#about .container {
-    height: 100%;
-    background-color: #252526;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.code h1, .code p {
-    overflow: hidden;
-    display: inline-block;
-    white-space: nowrap;
-}
-.code h1 {
-    width: 0;
-    animation: typing-h1 3s steps(20) forwards, blink 0.7s ;
-}
-.code p {
-    width: 0;
-    animation: typing-p 3s steps(40) 3.5s forwards, blink 0.7s ;
-}
-.code  .img{
-    width: 0;
-    animation: img 3s steps(60) 6s forwards, blink 0.7s ;
-}
-.code  .btn1{
-    width: 0;
-    animation: btn1 3s steps(80) 9s forwards, blink 0.7s ;
-}
-.code  .btn2{
-    width: 0;
-    animation: btn1 3s steps(100) 12s forwards, blink 0.7s infinite;
-}
-@keyframes typing-h1 {
-    from { width: 0; }
-    to { width: 100%; }
-}
-@keyframes typing-p {
-    from { width: 0; }
-    to { width: 100%; }
-}
-@keyframes img {
-    from { width: 0; }
-    to { width: 100%; }
-}
-@keyframes btn1 {
-    from { width: 0; }
-    to { width: 100%; }
-}
-@keyframes btn2 {
-    from { width: 0; }
-    to { width: 100%; }
-}
-@keyframes blink {
-    50% { border-color: transparent; }
-}
-.cinza{
-    color: gray;
-}
-.azul{
-    color: rgb(0, 110, 255);
-}
-.gold{
-    color: gold;
+    background-color: #1e1e1e;
 }
 
-.windows{
-    background-color: #000;
-    width: 75%;
-    height: 65vh;
-    border-radius: 7px;
-    overflow: hidden;
-    position: relative;
+.terminal {
+    width: 50vw;
+    background: #282c34;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    font-family: monospace;
+    color: #abb2bf;
+    padding-bottom: 20px;
 }
-.window-code{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-.window-browser{
-    display: none;
-    background-color: #141414;
-    width: 100%;
-    height: 100%;
-}
-.container-top{
-    border-bottom: 2px solid gray;
-    height: 10%;
+
+.terminal-header {
     display: flex;
     justify-content: space-between;
-    padding: 5px 20px;
     align-items: center;
-    background-color: #000;
-}
-.windows img{
-    width: 20px;
-}
-.container-top i{
-    font-size: 1.3em;
+    padding: 10px;
+    background: #3a3f4b;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.container-down{
-    position: absolute;
-    width: 100%;
-    bottom: 3px;
-    padding: 10px 0px;
+.terminal-header .buttons {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.icons-window {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-}
-.icons-window img{
-    width: 15px;
-}
-.icons-window div {
-    cursor: pointer;
-    background-color: #D9D9D9;
-    color: rgb(27, 4, 43);
-    width: 30px;
-    height: 30px;
-    border-radius: 7px;
-    padding: 7px;
-    display: flex;
-    align-items: center;
-    position: relative; /* Necessário para posicionar a linha corretamente */
-}
-.onWindow{
-    scale: 1.2;
-}
-.icons-window  .onWindow::after {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    border-radius: 5px;
-    background: rgb(20, 125, 223);
-    bottom: -7px; /* Move a linha para baixo da div */
-    left: 50%;
-    transform: translateX(-50%); /* Centraliza a linha */
 }
 
-.aba-browser{
-    background-color: #3D3D3D;
-    border-radius: 5px 5px 0px 0px;
-    padding: 5px 10px; 
-    font-size: 12px;
-    margin-bottom: -14px;
-}
-.aba-browser i{
-    margin-left: 12px;
-    font-size: 12px;
-}
-
-.container-browser{
-    background-color: #141414;
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-}
-.container-browser .sobre{
-    text-align: left;
-    color: #d7d0e0;
-}
-.container-browser .image img{
-    width: 200px;
-    height: 200px;
+.terminal-header .buttons span {
+    width: 12px;
+    height: 12px;
+    margin: 3px;
     border-radius: 50%;
+    display: inline-block;
+}
+
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.terminal-body {
+    padding: 20px;
+    font-size: 18px;
+}
+
+.command {
+    color: #61afef;
+}
+
+#github-link {
+    color: #98c379;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#github-link:hover {
+    text-decoration: underline;
 }

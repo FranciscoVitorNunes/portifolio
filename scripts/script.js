@@ -37,3 +37,29 @@ function vsCodeClick() {
         displayBrowser.style.display = "none"
     }
 }
+const text = "Olá! Meu nome é Francisco Vitor, sou desenvolvedor fullstack apaixonado por tecnologia, web e jogos.";
+const skills = "HTML, CSS, JavaScript, React, Node.js, Python, Godot, SQL";
+let index = 0;
+let skillIndex = 0;
+const typingElement = document.getElementById("typing-text");
+const skillsElement = document.getElementById("skills");
+
+function typeEffect() {
+    if (index < text.length) {
+        typingElement.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 35);
+    } else {
+        setTimeout(typeSkills, 400);
+    }
+}
+
+function typeSkills() {
+    if (skillIndex < skills.length) {
+        skillsElement.innerHTML += skills.charAt(skillIndex);
+        skillIndex++;
+        setTimeout(typeSkills, 50);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", typeEffect);
