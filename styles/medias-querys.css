@@ -69,6 +69,9 @@
     .terminal-body{
         font-size: 16px;
     }
+    .footer{
+        display: none;
+    }
 }
 @media  (min-width: 1024px) {
     #navbar ul{
