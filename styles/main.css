@@ -190,6 +190,7 @@ background: #a44cb8;
 }
 
 .project-card {
+    cursor: pointer;
     background: white;
     border-radius: 10px;
     padding-bottom: 10px;
